@@ -1,0 +1,100 @@
+body {
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
+  }
+  
+  .container { 
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-column-gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #banner {
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    background: orange; /* Change the background color here */
+    height: 450px;
+    border: 2px solid rgb(102, 101, 101);
+    grid-template-columns: 1/13;
+  }
+  
+  .logo-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: logoMove 1s infinite alternate; /* Updated duration */
+    display: block; /* Add this line */
+    margin: 0 auto; /* Add this line */
+  }
+  
+  @keyframes logoMove {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .melon-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: melonMove 1.5s infinite alternate; /* Updated duration */
+    display: block; /* Add this line */
+    margin-top: 20px; /* Add this line */
+  }
+  
+  @keyframes melonMove {
+    0% {
+    transform: translateX(0);
+    }
+    50% {
+    transform: translateX(150px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+  }
+  
+  .orange-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: orangeMove 4s infinite alternate; /* Updated duration */
+    display: block; /* Add this line */
+    margin-top: 20px; /* Add this line */
+  }
+  
+  @keyframes orangeMove {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(200px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .welcome-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    animation: textFade 2s infinite alternate;
+  }
+  
+  @keyframes textFade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
